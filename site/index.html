@@ -3,6 +3,7 @@
 <meta charset="utf-8">
   <head>    
         <link href="styles/style.css" rel="stylesheet" type="text/css">
+        <title id="title">Work Harder</title>
   </head>
   <body>
     <header>
@@ -16,15 +17,63 @@
     <table>
         <tr><th>Рыцари</th><th>Рейтинг конференции</th><th>X</th></tr>
         <tr><td>В этой конференции x человек</td><td></td><td></td></tr>
-        </tr>
     </table>
     	<td>
-            <form action="https://us04web.zoom.us/j/74232708199?pwd=UnQyZTRJK1piYnlEWXBON1BoODVldz09">
-            <button class="d24"></button>
+            <form action="https://us04web.zoom.us/j/6152205181?pwd=WVkzZHVpRWpDQm5jbzgrbUl6QjF6QT09">
+            <button class="d24" id = "toZoom"></button>
             </form>
         </td>>
         </tr>
     </table>
-	</p>
+    <a href="https://github.com/00-2/findGroup">Поддержка проекта &#128275;</a>
+    <script>
+       let stringTitle = 'Work Harder Every Day';
+       let arr = stringTitle.split("");
+       let i = -1, arrSize = arr.length,ctd = 8;
+       function changeTitle(i, arr, arrSize, ctd) {
+            let stringResult = "";
+            for(let j = 0; j<ctd; i++, j++){
+                if(i==arrSize){
+                    i=0;
+                    stringResult+=" ";
+                    ctd++;
+                }
+                stringResult+=arr[i];
+            }
+            document.title = stringResult;
+        }
+       setInterval(() => {
+        changeTitle(++i,arr,arrSize,ctd);
+        if (i==arrSize){
+            i=-1;
+           }
+        }, 120);
+        </script>
+    <script>
+        var btn = document.getElementById("toZoom");
+           function createInput() {
+            let input = document.createElement('input');
+            input.type="text";
+            input.id="zoomPassword";
+            input.setAttribute("value", "541236");
+            document.body.appendChild(input);
+            }
+            function removeInput() {
+                var input = document.getElementById("zoomPassword");
+                document.body.removeChild(input);
+            }
+            function copyPassword() {
+                createInput();
+                let input = document.getElementById("zoomPassword");
+                input.select();
+                document.execCommand("copy");
+                removeInput();
+            }
+            btn.onclick = function() {
+            copyPassword();
+            alert("Код для zoom конференции скопирован в буфер обмена");
+          }
+    </script>
   </body>
+
 </html>
