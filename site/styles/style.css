@@ -130,6 +130,7 @@
       }
     .dropdown {
       position: relative;
+      float: right;
       display: inline-block;
 }
 
