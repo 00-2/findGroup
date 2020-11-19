@@ -1,0 +1,23 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="speech_recognition" />
+          <option value="VoiceHelper.*" />
+          <option value="quickstart.*" />
+          <option value="face_recognition" />
+          <option value="videoCapture.face_recognition.detector" />
+          <option value="videoCapture.face_recognition.*" />
+          <option value="workWithDB" />
+          <option value="videoCapture.faceRecognizerModule.*" />
+          <option value="workWithSystem" />
+          <option value="videoCapture.main.classPhoto" />
+          <option value="classPhoto" />
+          <option value="classDB" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>
