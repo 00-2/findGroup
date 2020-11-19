@@ -1,4 +1,4 @@
- .mainPhoto{
+      .mainPhoto{
         height: 50px;
         vertical-align: middle;
       }
@@ -104,14 +104,14 @@
   		transition: .3s linear;
 		}
 	  tr:hover td {color: #6699ff;}
-	  .d24 {
+	  .plusButton {
 		background: #00008B;
 		height: 90px;
 		width: 15px;
 		position: relative;
 		left: -50px;
 		}
-	  .d24:after {
+	  .plusButton:after {
 		content: "";
 		height: 14px;
 		width: 90px;
